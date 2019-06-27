@@ -4,24 +4,27 @@
   "description": "restful api",
   "main": "server.js",
   "scripts": {
-    "client-install": "npm install --prefix client",
-    "client": "npm start --prefix client",
+    "app-install": "npm install --prefix app",
+    "app": "npm start --prefix app",
     "start": "node server.js",
-    "server": "nodemon server.js",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "server": "node server.js",
+    "dev": "concurrently \"npm run server\" \"npm run app\""
   },
-  "author": "米斯特吴",
+  "author": "605534423@qq.com",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.19.0",
     "bcrypt": "^2.0.1",
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
     "gravatar": "^1.6.0",
     "jsonwebtoken": "^8.2.1",
+    "jwt-decode": "^2.2.0",
     "mongoose": "^5.1.0",
     "passport": "^0.4.0",
     "passport-jwt": "^4.0.0",
-    "validator": "^10.2.0"
+    "validator": "^10.2.0",
+    "vuex": "^3.1.1"
   },
   "devDependencies": {
     "concurrently": "^3.6.1"

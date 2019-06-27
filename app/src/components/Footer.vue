@@ -1,7 +1,7 @@
 <template>
   <!-- Footer -->
-  <footer class="bg-dark text-white mt-5 p-4 text-center">
-    Copyright &copy; 2018 米修在线 微信公众号: why2wm
+  <footer class="bg-dark text-white mt-5 p-3 text-center">
+    Copyright &copy; 2019 Xue 如有侵权请联系我
   </footer>
 </template>
 
