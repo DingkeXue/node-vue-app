@@ -35,7 +35,7 @@ const route = new Router({
   ]
 });
 
-// 全局守卫
+// 全局守卫，判断用户跳转的页面是否涉及到必须登录
 route.beforeEach((to, from, next) => {
   // 获取token
   const isLogin = localStorage.jwtToken ? true : false;

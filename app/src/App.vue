@@ -48,6 +48,7 @@ export default {
     }
   },
   methods: {
+    // 检测是否为空
     isEmpty(value) {
       return (
         value === undefined ||
