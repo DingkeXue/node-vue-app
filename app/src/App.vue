@@ -1,9 +1,11 @@
 <template>
   <div id="app">
     <NavBar />
-    <keep-alive>
-      <router-view></router-view>
-    </keep-alive>
+    <div class="main">
+      <keep-alive>
+        <router-view></router-view>
+      </keep-alive>
+    </div>
     <Footer />
     <Loading v-show="loading" />
   </div>
@@ -64,5 +66,15 @@ export default {
 <style>
   body {
     font-family: "Microsoft YaHei";
+  }
+
+  #app {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  .main {
+    flex: 1;
   }
 </style>

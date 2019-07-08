@@ -89,5 +89,8 @@ export default {
 </script>
 
 <style scoped>
+  .btn-info {
+    width: 100%;
+  }
 </style>
 

@@ -19,7 +19,6 @@ const route = new Router({
   mode: 'history',
   linkActiveClass: 'active',
   routes: [
-    { path: '*', redirect: '/' },
     { path: '/', component: Landing },
     { path: '/login', component: Login },
     { path: '/register', component: Register },
@@ -31,7 +30,8 @@ const route = new Router({
     { path: '/profiles', component: Profiles },
     { path: '/profile/:handle', component: Profile },
     { path: '/feed', component: Posts },
-    { path: '/post/:id', component: Post }
+    { path: '/post/:id', component: Post },
+    { path: '*', redirect: '/' }
   ]
 });
 
@@ -40,7 +40,7 @@ route.beforeEach((to, from, next) => {
   // 获取token
   const isLogin = localStorage.jwtToken ? true : false;
 
-  if (to.path == '/login' || to.path == '/register' || to.path == '/') {
+  if (to.path === '/login' || to.path === '/register' || to.path === '/') {
     next();
   } else {
     isLogin ? next() : next('/login');
