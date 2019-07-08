@@ -1,12 +1,12 @@
 <template>
   <div id="app">
-    <NavBar />
+    <NavBar></NavBar>
     <div class="main">
       <keep-alive>
         <router-view></router-view>
       </keep-alive>
     </div>
-    <Footer />
+    <Footer></Footer>
     <Loading v-show="loading" />
   </div>
 </template>

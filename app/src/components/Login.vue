@@ -89,6 +89,10 @@ export default {
 </script>
 
 <style scoped>
+  .login {
+    margin-top: 5%;
+  }
+
   .btn-info {
     width: 100%;
   }

@@ -4,9 +4,9 @@
     <div class="container">
       <div class="row">
         <div class="col-md-5 m-auto">
-          <h1 class="display-4 text-center">注册</h1>
+          <h1 class="text-center">注册</h1>
           <p class="lead text-center">
-            已有账号？
+            <span class="text-muted">已有账号？</span>
             <router-link to="/login">登录</router-link>
           </p>
           <form @submit.prevent="submit" autocomplete="off" method="post">
@@ -93,5 +93,8 @@ export default {
 </script>
 
 <style scoped>
+  .register {
+    margin-top: 5%;
+  }
 </style>
 
